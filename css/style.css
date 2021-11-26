@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+}
+.topNav {
+    background-color: brown;
+    text-align: center;
+}
+.topNav ul {
+    display: inline-flex;
+    list-style: none;
+}
+.topNav ul li {
+    margin: 0 40px;
+}
+.topNav ul li a{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* NAV */
+.Nav {
+    background-color: rgba(0,0,0,0.9);
+}
+.inlineNav {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+.list {
+    display: inline-flex;
+    list-style: none;
+    margin: 0 20px;
+}
+.list li {
+    margin: 0 20px;
+    padding: 15px 0;
+    position: relative;
+}
+.list li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+}
+.list li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0%;
+    transition: 1s;
+}
+.list li:hover:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    bottom: 0;
+    transition: 1s;
+    left: 0;
+}
+.form {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    margin-left: auto;
+}
+.form li {
+    position: relative;
+}
+.form li input {
+    padding: 8px 8px;
+    border: 0;
+    border-radius: 15px;
+}
+.form li i{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: brown;
+}
+/* BANNER */
+.banner {
+    background: url("../img/photo1628670771\ \(1\).jpeg");
+    width: 100%;
+    height: 90vh;
+}
+.imgBlock {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+}
+.imgBlock img {
+    width: 300px;
+}
+.button {
+    text-align: center;
+    padding-top: 80px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 10px;
+    position: relative;
+    display: inline-block;
+  
+}
+.button a span {
+    width: 100%;
+    height: 100%;
+    background: rgba(102, 3, 3, 0.8);
+    position: absolute;
+    left: -100%;
+    animation: neon 2s infinite linear;
+    bottom: 0;
+}
+@keyframes neon {
+  0%{
+    left: -100%;
+  }
+  100%{
+      left: 100%;
+  }
+}
